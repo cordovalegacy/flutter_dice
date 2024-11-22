@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  const Header(this.heading, {super.key});
+
+  final String heading;
 
   @override
   Widget build(context) {
-    return const Text(
-      'Flutter Dice',
-      style: TextStyle(
+    return Text(
+      heading,
+      style: const TextStyle(
         color: Colors.blueAccent,
         fontSize: 50,
         fontWeight: FontWeight.w600,
