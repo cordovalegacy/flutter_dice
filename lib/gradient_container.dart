@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dice/dice.dart';
 
 class GradientAlignment {
   const GradientAlignment({required this.begin, required this.end});
@@ -14,10 +15,6 @@ class GradientContainer extends StatelessWidget {
   final List<Color> gradientColors;
   final GradientAlignment gradientAlignment;
 
-  rollDiceHandler(){
-    
-  }
-
   @override
   // If Flutter detects a custom widget in the widget tree, it will look for and invoke the build method
   Widget build(context) {
@@ -29,16 +26,9 @@ class GradientContainer extends StatelessWidget {
           end: gradientAlignment.end,
         ),
       ),
-      child: Center(
-          child: Column(
-        children: [
-          Image.asset(
-            'assets/images/dice-1.png',
-            width: 200,
-          ),
-          ElevatedButton(onPressed: (){}, child: const Text('Roll Dice'))
-        ],
-      )),
+      child: const Center(
+        child: Dice(),
+      ),
     );
   }
 }

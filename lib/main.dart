@@ -13,7 +13,7 @@ void main() {
 
   runApp(
     // const allows Dart to store variable in memory (cache)
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         body: GradientContainer(
           gradientColors,

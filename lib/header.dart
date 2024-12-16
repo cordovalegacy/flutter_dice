@@ -10,8 +10,8 @@ class Header extends StatelessWidget {
     return Text(
       heading,
       style: const TextStyle(
-        color: Colors.blueAccent,
-        fontSize: 50,
+        color: Colors.amber,
+        fontSize: 30,
         fontWeight: FontWeight.w600,
       ),
     );
